@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>O mnie i moich przyjaciołach</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            overflow-x: hidden;
+            background: linear-gradient(120deg, #ffc0cb, #ff6b6b);
+            position: relative;
+        }
+        header {
+            background-color: #ff4d6d;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        header h1 {
+            margin-bottom: 10px;
+        }
+        .name-list {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .name-list a {
+            display: inline-block;
+            margin: 0 15px;
+            padding: 10px 20px;
+            background-color: #ff7a95;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .name-list a:hover {
+            background-color: #ff1a4d;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+        .person {
+            background-color: #ffe6f0;
+            margin: 30px 0;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            position: relative;
+        }
+        .person h2 {
+            color: #ff1a4d;
+        }
+        .images {
+            margin-top: 15px;
+        }
+        .images img {
+            width: 180px;
+            height: auto;
+            border-radius: 12px;
+            margin: 5px;
+            transition: transform 0.3s;
+        }
+        .images img:hover {
+            transform: scale(1.05);
+        }
+        .icon {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+        }
+        footer {
+            background-color: #ff4d6d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            transform: rotate(45deg);
+            top: -50px;
+            border-radius: 5px 5px 0 0;
+            animation: fall linear infinite;
+        }
+        .heart::before,
+        .heart::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+        .heart::after {
+            left: 10px;
+            top: 0;
+        }
+        @keyframes fall {
+            0% {
+                transform: translateY(0) rotate(45deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(45deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>O mnie i moich przyjaciołach</h1>
+    <p>Nasza różowo-czerwona strona z animowanymi smaczkami ❤️</p>
+</header>
+
+<div class="name-list">
+    <a href="#piotrek">Piotrek</a>
+    <a href="#filip">Filip</a>
+    <a href="#julka">Julka</a>
+    <a href="#szymon">Szymon</a>
+    <a href="#kasia">Kasia</a>
+</div>
+
+<div class="container">
+
+    <div class="person" id="piotrek">
+        <h2>Piotrek</h2>
+        <p>Kilka informacji o Piotrku – hobby, charakter, zainteresowania.</p>
+        <div class="images">
+            <img src="piotrek.jpg" alt="Piotrek">
+            <img src="piotrek1.jpg" alt="Piotrek 1">
+            <img src="piotrek2.jpg" alt="Piotrek 2">
+        </div>
+       
+    </div>
+
+    <div class="person" id="filip">
+        <h2>Filip</h2>
+        <p>Filip to nasz niezastąpiony kierowca,
+pewna ręka, spokój pełna kontrola.
+Za kółkiem opanowany, zawsze na luzie,
+każdy czuje się bezpiecznie, nawet gdy pasy no cóż, w użyciu rzadziej niż prawo nakazuje 
+W paczce wiadomo gdzie trzeba, tam dowiezie,
+bez gadania, bez mapy, nawet gdy pogoda nie dopisuje.
+A po drodze humor niezastąpiony tekst poleci co chwilę,
+bo Filip bez powiedzonka nie przejedzie nawet mili.
+„Nie mogę, odpisuję Julce” klasyk kultowy,
+„Kocham Julkę”, „Jestem z Julką”  zestaw podstawowy.
+A gdy padnie: „Kaśka, zostaw, cycki Julki są moje”,
+Chichot idzie po aucie, choć Filip pełny powagi wypowiada te słowa każdy wie że w środku śmiech chowa
+Gdy Julka woła przeciągle: „Filiiiip!”,
+odpowiedź jest szybka zero pauz, zero lipy.
+„Też cię kocham” albo, całkiem na luzie:
+„Jak chcesz, to pojedziemy siku” romantyzm w stylu Filipa, w pakiecie z uśmiechem podany .
+Pantofel? Lepiej tak Nie mów bo się krzywi,
+choć każdy widzi, on się po prostu stara i nikogo to nie dziwi.
+Nie pod butem, nie na smyczy, bez dramatów na tytuł chłopaka Świata liczy 
+Bo Julka to Julka tu nie ma dyskusji,
+Filip dla niej nawet chmury by spuścił.
+Gdyby mógł, jak Golden z Furiozy, bez wahania,
+kupiłby jej morze, zachód słońca i śniadanie z gwiazdką Michael do łóżka bez gadania złożył.
+Czasem się obrazi wtedy muzyka głośniej, gaz trochę mocniej,
+ignor dla świata, ale Julka zawsze na pierwszym miejscu w głowie.
+Jeden buziak, czasem dwa i po sprawie,
+foch znika szybciej niż korek, gdy Filip wybierze boczne drogi.
+Najbardziej go rusza, choć z przymrużeniem oka,
+gdy Kaśka Julkę łapie wiadomo gdzie, sytuacja już wcale nie zadziwiająca.
+Niby żart, niby śmiech, ale trochę go to grzeje,
+Najlepszy kierowca, jakiego znamy,
+i chłopak, co dba, byśmy wszyscy się śmiali.
+Paczka i Julka to jego misja,
+Filip za kółkiem to właśnie jego definicja.</p>
+        <div class="images">
+            <img src="filip1.jpg" alt="Filip 1">
+            <img src="filip2.jpg" alt="Filip 2">
+            <img src="filip3.jpg" alt="Filip 3">
+			<img src="filip4.jpg" alt="Filip 4">
+			<img src="filip5.jpg" alt="Filip 5">
+			<img src="filip6.jpg" alt="Filip 6">
+			<img src="filip7.jpg" alt="Filip 7">
+			<img src="filip8.jpg" alt="Filip 8">
+			<img src="filip9.jpg" alt="Filip 9">
+			<img src="filip10.jpg" alt="Filip 10">
+		
+        </div>
+       
+    </div>
+
+    <div class="person" id="julka">
+        <h2>Julka</h2>
+        <p>Kilka informacji o Julce.</p>
+        <div class="images">
+            <img src="julka1.jpg" alt="Julka 1">
+            <img src="julka2.jpg" alt="Julka 2">
+			<img src="julka3.jpg" alt="Julka 3">
+			<img src="julka4.jpg" alt="Julka 4">
+			<img src="julka5.jpg" alt="Julka 5">
+			<img src="julka6.jpg" alt="Julka 6">
+			<img src="julka7.jpg" alt="Julka 7">
+			<img src="julka8.jpg" alt="Julka 8">
+			<img src="julka9.jpg" alt="Julka 9">
+			<img src="julka10.jpg" alt="Julka 10">
+        </div>
+        
+    </div>
+
+    <div class="person" id="szymon">
+        <h2>Szymon</h2>
+        <p>Szymon to chodzący przykład stylu i perfekcji. Zawsze jest dobrze ubrany, a jego włosy i twarz są pod stałą kontrolą. Ma takiego fioła na punkcie fryzury, że poprawianie włosów to jego codzienny, automatyczny nawyk. W paczce jest znany z tego, że jest zabawny i wyjątkowy, nawet jeśli sam czasem udaje, że wcale mu nie zależy. Nie ma żadnych ksywek, bo Szymon to po prostu Szymon, marka sama w sobie. Lepiej jednak nie dotykać go po włosach ani po twarzy, bo to gwarantowany trigger, podobnie jak Kaśka, która potrafi wyprowadzić go z równowagi szybciej niż rozczochrana fryzura.
+
+Gdy się obrazi, przechodzi w tryb cichy. Siedzi, nie odzywa się, a na pytania odpowiada najwyżej krótkim „ok” albo kompletną ciszą. Zawsze, gdy wychodzimy razem, jego klasyczne pytanie brzmi: „Co, jedzenie?” jakby posiłek był najważniejszym punktem dnia. A gdy ktoś robi zdjęcia, Szymon prezentuje swoją ulubioną minę, w której stara się wyglądać jak sigma, ale każdy i tak się z niej śmieje, a i tak zwychodzi całkiem nieźle.
+
+Aktualnie kręci z Natalką, więc często można zobaczyć go wpatrzonego w iPhone, analizującego wiadomości jak strategię wojenną. Mimo że bywa gburowaty, wszyscy go kochamy, a od niedawna próbuje też swoich sił z alkoholem. Może nie dorównuje Piotrkowi i Kasi, ale spokojnie bedzie z niego ogier .</p>
+        <div class="images">
+            <img src="szymon1.jpg" alt="Szymon 1">
+            <img src="szymon2.jpg" alt="Szymon 2">
+            <img src="szymon3.jpg" alt="Szymon 3">
+			<img src="szymon4.jpg" alt="Szymon 4">
+			<img src="szymon5.jpg" alt="Szymon 5">
+			<img src="szymon6.jpg" alt="Szymon 6">
+			<img src="szymon7.jpg" alt="Szymon 7">
+			<img src="szymon8.jpg" alt="Szymon 8">
+			<img src="szymon9.jpg" alt="Szymon 9">
+			<img src="szymon10.jpg" alt="Szymon 10">
+        </div>
+       
+    </div>
+
+    <div class="person" id="kasia">
+        <h2>Kasia</h2>
+        <p>Kasia w paczce znana jest z tego doskonale,
+że lubi sobie wypić i bawić się wytrwale.
+Gdy procent wchodzi w grę humor rośnie w sekundę,
+a Kasia potrafi rozkręcić każdą, nawet najcichszą rundkę.
+Najbardziej ją wkurza, gdy Julka mówi „nie piję”,
+bo przecież razem smakuje lepiej tak Kasia nam tłumaczy 
+Druga sprawa: siostra, co każe wracać do domu,
+i psuje plan wieczoru bez żadnego kompromisu tonu.
+Nie ruszaj też jej elektryka ostrzegamy z troską,
+bo jak nie ma czym zapalić, to humor znika.
+To drobiazgi, ale każdy w paczce wie,
+że lepiej, gdy Kasia ma wszystko, co chce.
+Bo Kasia to dziewczyna, co pracy się nie boi,
+jako kelnerka lata, ogarnia, znosi i stoi.
+Zawsze daje z siebie wszystko, nie idzie na skróty,
+choć najbardziej ją boli, gdy my wychodzimy, a ona ma zmiany, dyżury i buty w gotowości.
+Jeszcze gorzej, gdy szef albo mama mówią „nie”,
+i cały plan imprezy nagle sypie się w tle.
+Wtedy Kasia wkurzona, ale dalej walczy o wcześniejsze z zmiany zwolnienie,
+bo jak już wyjdzie to nadrabia za wszystkie chwile stracone.
+Z Julką łączy ją historia trochę pokręcona,
+bo poznały się przez jej brata sprawa znana.
+Brat, chłopak los stanął w opiece zrobił swoje,
+a mimo to przyjaźń została i nigdzie oddalać się nie zamierza
+Dużo się wygłupiają, śmieją i kręcą tyłkami,
+a jak Julka jest z Kaśką to wszyscy dalszy przebieg już znamy:
+tylne siedzenia stają się parkietem do tańca,
+śpiew tak głośny, że auto prosi o litość bez szansy.
+Rozpychają się, machają, tańczą bez planu,
+znaki drogowe o łaskę błagają 
+Filip na życzenie damy odpala kamerę cofania klasyk,
+a one robią show, które mogłoby przejść do kroniki życia.
+I choć czasem wkurzy, czasem narobi hałasu,
+to Kasia jest sercem imprezy, nie da się jej zgasić
+Zawsze częścią paczki, zawsze gotowa do akcji,
+bo gdy Kasia jest obok nuda nie ma racji.
+Jej energia, upór i odwaga sprawiają,
+że trudno ją przeoczyć wszyscy to znają.
+Jedno jest pewne, bez żadnych dyskusji:
+gdzie Kasia, tam humor zabawa i lejący się sam do gardła alkohol.
+</p>
+        <div class="images">
+            <img src="kasia1.jpg" alt="Kasia 1">
+            <img src="kasia2.jpg" alt="Kasia 2">
+            <img src="kasia3.jpg" alt="Kasia 3">
+			<img src="kasia4.jpg" alt="Kasia 4">
+			<img src="kasia5.jpg" alt="Kasia 5">
+			<img src="kasia6.jpg" alt="Kasia 6">
+			<img src="kasia7.jpg" alt="Kasia 7">
+			<img src="kasia8.jpg" alt="Kasia 8">
+			<img src="kasia9.jpg" alt="Kasia 9">
+			<img src="kasia10.jpg" alt="Kasia 10
+		
+        </div>
+       
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 Nasza paczka – strona zrobiona z sercem ❤️</p>
+</footer>
+
+<script>
+function createHearts() {
+    for(let i = 0; i < 30; i++) {
+        let heart = document.createElement('div');
+        heart.className = 'heart';
+        heart.style.left = Math.random() * window.innerWidth + 'px';
+        heart.style.animationDuration = (3 + Math.random() * 5) + 's';
+        heart.style.width = heart.style.height = (10 + Math.random() * 20) + 'px';
+        document.body.appendChild(heart);
+    }
+}
+window.onload = createHearts;
+</script>
+
+</body>
+</html>
